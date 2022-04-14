@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <!-- 타임리프 문법 -->
+        <!-- ${ } 를 사용하면 단순 문자 치환 -->
+        <!-- ${{ }} 를 사용하면 컨버터 적용 -->
+        <ul>
+            <li>${number}: <span th:text="${number}" ></span></li>
+            <li>${{number}}: <span th:text="${{number}}" ></span></li>
+
+            <li>${ipPort}: <span th:text="${ipPort}" ></span></li>
+            <li>${{ipPort}}: <span th:text="${{ipPort}}" ></span></li>
+        </ul>
+    </body>
+</html>
